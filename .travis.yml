@@ -5,6 +5,7 @@ branches:
 git:
   submodules: false
 before_install:
+  - sed -i 's/git@github.com:/git:\/\/github.com\//' .gitmodules
   - git submodule update --init --remote --recursive
 install:
   - pip install markdown pelican ghp-import
