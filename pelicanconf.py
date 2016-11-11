@@ -34,7 +34,7 @@ AUTHOR_FEED_RSS = None
 PLUGIN_PATHS = ['pelican-plugins', 'plugins']
 #PLUGIN_PATHS = ['../pelican-plugins']
 #PLUGINS = ['i18n_subsites', 'sitemap', 'pelican_gist']
-PLUGINS = ['i18n_subsites', 'sitemap', 'pelican-gist']
+PLUGINS = ['i18n_subsites', 'sitemap']
 
 #PAGE_URL = '{slug}/'
 #PAGE_SAVE_AS = '{slug}/index.html'
