@@ -2,6 +2,10 @@ language: python
 branches:
   only:
   - source
+git:
+  submodules: false
+before_install:
+  - git submodule update --init --remote --recursive
 install:
   - pip install markdown pelican ghp-import
 script:
