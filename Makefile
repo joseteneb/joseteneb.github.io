@@ -129,7 +129,8 @@ cf_upload: publish
 
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+	#git push origin $(GITHUB_PAGES_BRANCH)
+	git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git  $(GITHUB_PAGES_BRANCH)
 
 newpost:
 ifdef NAME
